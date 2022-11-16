@@ -1,12 +1,12 @@
-﻿//Pump String Array innit
+﻿//Pump String Array 
 string[] pump = new string[9] { "OPEN", "OPEN", "OPEN", "OPEN", "OPEN", "OPEN", "OPEN", "OPEN", "OPEN" };
 
-//UI thingy (Not finsished probably)
+//UI thingy 
 Console.WriteLine("pump 1: " + pump[0] + " |pump 2: " + pump[1] + " |pump 3: " + pump[2]);
 Console.WriteLine("pump 4: " + pump[3] + " |pump 5: " + pump[4] + " |pump 6: " + pump[5]);
 Console.WriteLine("pump 7: " + pump[6] + " |pump 8: " + pump[7] + " |pump 9: " + pump[8]);
 
-//pump selection stuff BROTHA
+//pump selection stuff 
 int i = 0;
 do
 {
