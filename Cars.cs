@@ -10,10 +10,7 @@ class Cars
         }
 
     }
-    
-
-   
-    
+        
     public void CarNum()
     {
         Console.WriteLine("Cars: " + Carqueue.Count);
