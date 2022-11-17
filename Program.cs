@@ -7,6 +7,7 @@ static void UI(string[] pump)
 Console.WriteLine("pump 1: " + pump[0] + " |pump 2: " + pump[1] + " |pump 3: " + pump[2]);
 Console.WriteLine("pump 4: " + pump[3] + " |pump 5: " + pump[4] + " |pump 6: " + pump[5]);
 Console.WriteLine("pump 7: " + pump[6] + " |pump 8: " + pump[7] + " |pump 9: " + pump[8]);
+Console.WriteLine("10: Exit");
 } 
 
 
@@ -140,6 +141,15 @@ do
         void pumpO(object o)
         {
             pump[8] = "OPEN";
+        }
+    }
+    if (pumpSelect == 10)
+    {
+        Console.WriteLine("Cheers");
+        Timer pumpOpen = new Timer(pumpO, null, 8000, 8000);
+        void pumpO(object o)
+        {
+            
         }
     }
 }
