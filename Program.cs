@@ -1,4 +1,6 @@
-﻿//Pump String Array 
+﻿
+
+//Pump String Array 
 string[] pump = new string[9] { "OPEN", "OPEN", "OPEN", "OPEN", "OPEN", "OPEN", "OPEN", "OPEN", "OPEN" };
 
 //UI thingy 
@@ -7,7 +9,7 @@ static void UI(string[] pump)
 Console.WriteLine("pump 1: " + pump[0] + " |pump 2: " + pump[1] + " |pump 3: " + pump[2]);
 Console.WriteLine("pump 4: " + pump[3] + " |pump 5: " + pump[4] + " |pump 6: " + pump[5]);
 Console.WriteLine("pump 7: " + pump[6] + " |pump 8: " + pump[7] + " |pump 9: " + pump[8]);
-Console.WriteLine("10: Exit");
+Console.WriteLine("10: View fuel dispensed");
 } 
 
 
@@ -21,7 +23,6 @@ UI(pump);
 int i = 0;
 do
 {
-
     int pumpSelect;
     Console.WriteLine("Select a pump from 1-9:");
     pumpSelect = Convert.ToInt32(Console.ReadLine());
@@ -145,13 +146,9 @@ do
     }
     if (pumpSelect == 10)
     {
-        Console.WriteLine("Cheers");
-        Timer pumpOpen = new Timer(pumpO, null, 8000, 8000);
-        void pumpO(object o)
-        {
-            
-        }
+        Console.WriteLine("The total fuel dispensed is: ");
     }
+        
 }
 while (i < 5);
 //}
