@@ -12,7 +12,6 @@ Console.WriteLine("pump 7: " + pump[6] + " |pump 8: " + pump[7] + " |pump 9: " +
 Console.WriteLine("10: View fuel dispensed");
 } 
 
-
 Cars cars = new Cars();
 cars.CarNum();
 
@@ -33,7 +32,6 @@ do
         pump[0] = "BUSY";
         cars.CarNum();
         UI(pump);
-       
         Timer pumpOpen = new Timer(pumpO, null, 8000, 8000);
         void pumpO(object o)
         {
