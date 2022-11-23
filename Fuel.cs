@@ -1,9 +1,15 @@
 class Fuel
 {
-    public static List<string>FuelDispense = new List<string>{"o"};
-    
-    public void Fuels()
+    double FuelAmount = 0;
+
+    public double getFuel()
     {
-        
+        return FuelAmount;
     }
+    
+    public void addFuel()
+    {
+        FuelAmount += 12;
+    }
+    
 }

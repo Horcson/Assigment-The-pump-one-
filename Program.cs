@@ -12,6 +12,7 @@ Console.WriteLine("pump 7: " + pump[6] + " |pump 8: " + pump[7] + " |pump 9: " +
 Console.WriteLine("10: View fuel dispensed");
 } 
 
+Fuel Fuel = new Fuel();
 Cars cars = new Cars();
 cars.CarNum();
 
@@ -31,6 +32,7 @@ do
     {
         pump[0] = "BUSY";
         cars.CarNum();
+        Fuel.addFuel();
         UI(pump);
         Timer pumpOpen = new Timer(pumpO, null, 8000, 8000);
         void pumpO(object o)
@@ -43,6 +45,7 @@ do
     {
         pump[1] = "BUSY";
         cars.CarNum();
+        Fuel.addFuel();
         UI(pump);
         
         Timer pumpOpen = new Timer(pumpO, null, 8000, 8000);
@@ -56,6 +59,7 @@ do
     {
         pump[2] = "BUSY";
         cars.CarNum();
+        Fuel.addFuel();
         UI(pump);
         
         Timer pumpOpen = new Timer(pumpO, null, 8000, 8000);
@@ -69,6 +73,7 @@ do
     {
         pump[3] = "BUSY";
         cars.CarNum();
+        Fuel.addFuel();
         UI(pump);
 
         Timer pumpOpen = new Timer(pumpO, null, 8000, 8000);
@@ -82,6 +87,7 @@ do
     {
         pump[4] = "BUSY";
         cars.CarNum();
+        Fuel.addFuel();
         UI(pump);
 
         Timer pumpOpen = new Timer(pumpO, null, 8000, 8000);
@@ -95,6 +101,7 @@ do
     {
         pump[5] = "BUSY";
         cars.CarNum();
+        Fuel.addFuel();
         UI(pump);
 
         Timer pumpOpen = new Timer(pumpO, null, 8000, 8000);
@@ -108,6 +115,7 @@ do
     {
         pump[6] = "BUSY";
         cars.CarNum();
+        Fuel.addFuel();
         UI(pump);
 
         Timer pumpOpen = new Timer(pumpO, null, 8000, 8000);
@@ -121,6 +129,7 @@ do
     {
         pump[7] = "BUSY";
         cars.CarNum();
+        Fuel.addFuel();
         UI(pump);
 
         Timer pumpOpen = new Timer(pumpO, null, 8000, 8000);
@@ -134,6 +143,7 @@ do
     {
         pump[8] = "BUSY";
         cars.CarNum();
+        Fuel.addFuel();
         UI(pump);
 
         Timer pumpOpen = new Timer(pumpO, null, 8000, 8000);
@@ -144,8 +154,13 @@ do
     }
     if (pumpSelect == 10)
     {
-        Console.WriteLine("The total fuel dispensed is: ");
+        Console.WriteLine("The total fuel dispensed is: " +Fuel.getFuel());
     }
+
+     if (pumpSelect == 11)
+     {
+        Fuel.addFuel();
+     }
         
 }
 while (i < 5);
