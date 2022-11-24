@@ -154,7 +154,7 @@ do
     }
     if (pumpSelect == 10)
     {
-        Console.WriteLine("The total fuel dispensed is: " +Fuel.getFuel());
+        Console.WriteLine("The total unleaded fuel dispensed is: " +Fuel.getFuel());
     }
 
      if (pumpSelect == 11)
