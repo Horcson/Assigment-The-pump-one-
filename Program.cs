@@ -1,4 +1,14 @@
-﻿
+﻿LoginSys Attendent = new LoginSys();
+
+Attendent.setLoginID("Owen");
+Attendent.setPassword("Rango");
+
+Console.WriteLine("ENTER LOGIN ID");
+
+
+
+
+
 
 //Pump String Array 
 string[] pump = new string[9] { "OPEN", "OPEN", "OPEN", "OPEN", "OPEN", "OPEN", "OPEN", "OPEN", "OPEN" };
