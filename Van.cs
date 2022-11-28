@@ -4,7 +4,10 @@ class Van
 
     public Van()
     {
-        Timer newVans = new Timer(van0, null, 1500, 1500);
+        Random rnd = new Random();
+        int time = rnd.Next(1500, 2200);
+
+        Timer newVans = new Timer(van0, null, 1500, time);
         void van0(object o)
         {
             VanQueue.Add("GOW");
@@ -13,7 +16,7 @@ class Van
 
     public void VanNum()
     {
-        Console.WriteLine("Vans: " + VanQueue.Count);
+        Console.WriteLine("\nVans: " + VanQueue.Count);
     }
 
 }

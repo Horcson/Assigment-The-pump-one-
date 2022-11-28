@@ -4,16 +4,19 @@ class LPG
 
     public LPG()
     {
-        Timer newLPGS = new Timer(LPG0, null, 1500, 1500);
+        Random rnd = new Random();
+        int time = rnd.Next(1500, 2200);
+
+        Timer newLPGS = new Timer(LPG0, null, 1500, time);
         void LPG0(object o)
         {
             LPGQueue.Add("GOW");
         }
     }
 
-    public void VanNum()
+    public void LPGNum()
     {
-        Console.WriteLine("Vans: " + LPGQueue.Count);
+        Console.WriteLine("LPGs: " + LPGQueue.Count);
     }
 
 }
